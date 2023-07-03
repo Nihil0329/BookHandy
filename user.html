@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Book<span>Handy</span></a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </nav>
+                <div class="fas fa-bars"></div>
+            </div>
+            <br><br><br>
+            <div class="box">
+                <h1 class="centerhead">USER PORTAL</h1>
+            </div>
+            </header>
+           <div class="container">
+            <div class="innerdiv">
+            <div class="leftinnerdiv">
+                <br>
+                <Button class="greenbtn" onclick="openpart('myaccount')">My Account</Button>
+                <Button class="greenbtn" onclick="openpart('requestbook')">Request Book</Button>
+                <Button class="greenbtn" onclick="openpart('issuereport')">Book Report</Button>
+                <Button class="greenbtn" onclick="openpart('returnbook')">Return Book</Button>
+                
+            </div>
+            <div class="rightinnerdiv">   
+            <div id="myaccount" class="innerright portion">
+            <Button class="greenbtn" >MY ACCOUNT</Button>
+            <form action="addbookserver_page.php" method="post" enctype="multipart/form-data">
+                <label>Name</label><input type="text" name="bookname" /></br>
+                <label>Email Id</label><input  type="text" name="bookdetail"/></br>
+                <label>Type</label><input type="text" name="bookaudor"/></br>
+                <label>User Id</label><input type="text" name="bookaudor"/></br></br>
+                </br>
+                </br>
+                </form>
+            </div>
+            </div>
+            <div class="rightinnerdiv">   
+                <div id="requestbook" class="innerright portion" style="display:none">
+                <Button class="greenbtn" >REQUEST BOOK</Button>
+                <form action="addbookserver_page.php" method="post" enctype="multipart/form-data">
+                    <label>Name</label><input type="text" name="bookname" /></br>
+                    <label>Email Id</label><input  type="text" name="bookdetail"/></br>
+                    <label>Type</label><input type="text" name="bookaudor"/></br>
+                    <label>User Id</label><input type="text" name="bookaudor"/></br></br>
+                    </br>
+                    </br>
+                    </form>
+                </div>
+                </div>
+                <div class="rightinnerdiv">   
+                    <div id="issuereport" class="innerright portion" style="display:none">
+                    <Button class="greenbtn" >BOOK REPORT</Button>
+                    <form action="addbookserver_page.php" method="post" enctype="multipart/form-data">
+                        <label>Name</label><input type="text" name="bookname" /></br>
+                        <label>Email Id</label><input  type="text" name="bookdetail"/></br>
+                        <label>Type</label><input type="text" name="bookaudor"/></br>
+                        <label>User Id</label><input type="text" name="bookaudor"/></br></br>
+                        </br>
+                        </br>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="rightinnerdiv">   
+                        <div id="returnbook" class="innerright portion" style="display:none">
+                        <Button class="greenbtn" >RETURN BOOK</Button>
+                        <form action="addbookserver_page.php" method="post" enctype="multipart/form-data">
+                            <label>Name</label><input type="text" name="bookname" /></br>
+                            <label>Email Id</label><input  type="text" name="bookdetail"/></br>
+                            <label>Type</label><input type="text" name="bookaudor"/></br>
+                            <label>User Id</label><input type="text" name="bookaudor"/></br></br>
+                            </br>
+                            </br>
+                            </form>
+                        </div>
+                        </div>
+            
+        </div>
+        </div>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
